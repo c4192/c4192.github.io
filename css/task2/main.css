@@ -1,0 +1,48 @@
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	background: #f9f9f9;
+	line-height: 1.7;
+}
+a {
+	text-decoration: none;
+}
+img {/*display: block;*/width: 30%;}
+
+.container {
+	max-width: 90%;
+	margin: 0 auto
+}
+.container:before,
+.container:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+.header {
+	margin-bottom: 35px;
+}
+.col-3,
+.col-4 {
+	float: left;
+}
+.col-3 {
+	width: 30%;
+}
+.col-4 {
+	width: 36%;
+	border-left: 2px solid #000;
+	border-right:2px solid #000
+}
+.item p:first-letter {
+	font-size: 30px;
+	color: #327fc7
+}
+.item a {
+	color: #0f4494
+}
+.item a:hover {
+	color: #3385ff
+}

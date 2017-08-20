@@ -1,0 +1,26 @@
+body{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.wrap {
+	max-width: 70%;
+	margin: 0 auto;
+	padding-left: 3%;
+}
+.wrap:before,
+.wrap:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.item {
+	width: 30%;
+	padding-bottom: 30%;
+	background: #ffa500;
+	float: left;
+	margin: 0 3% 3% 0;
+	border-radius: 10px;
+}
