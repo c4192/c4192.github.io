@@ -24,6 +24,7 @@ img {/*display: block;*/width: 30%;}
 .header {
 	margin-bottom: 35px;
 }
+.header a {color: #000}
 .col-3,
 .col-4 {
 	float: left;
@@ -41,7 +42,7 @@ img {/*display: block;*/width: 30%;}
 	color: #327fc7
 }
 .item a {
-	color: #0f4494
+	color: #b3d62f
 }
 .item a:hover {
 	color: #3385ff
