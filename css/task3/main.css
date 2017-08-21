@@ -1,7 +1,7 @@
 body,html {
 	max-width: 100%;
 	/*font-family: Microsoft Yahei;*/
-	/*font-weight: 600;*/
+	font-weight: 600;
 	/*font-size: 625%;*/
 	font-size: 2vw;
 	line-height: 1.5;
@@ -9,6 +9,16 @@ body,html {
 	margin: 0;
 	background: #68cdd5
 
+}
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 5vw
+    }
+    .item {
+    	width: 100%;
+    	float: none;
+    	margin-bottom: 10vw
+    }
 }
 .container {
 	/*width: 80%;*/
