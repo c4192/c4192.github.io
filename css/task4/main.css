@@ -12,10 +12,15 @@ a {text-decoration: none;color: #fff}
 	/*line-height: 1.875vw*/
 }
 .col-4 {
-	width: 40%;
+	/*width: 40%;*/
+	padding: 4.03% 0;
 	text-align: center;
 	font-size: 2.125vw
 	line-height: 2.125vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0
 }
 .fr {
 	text-align: right;
@@ -30,6 +35,7 @@ a {text-decoration: none;color: #fff}
 }
 .header {
 	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	right: 0;
