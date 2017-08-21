@@ -35,8 +35,8 @@ a {text-decoration: none;color: #fff}
 }
 .header {
 	position: fixed;
-	position: relative;
-	top: 0;
+/*	position: relative;
+*/	top: 0;
 	left: 0;
 	right: 0;
 	padding: 4.03% 4.3%;
