@@ -8,14 +8,15 @@
 		/*div{border: 1px solid black}*/
 		a{text-decoration: none;}
 		.container{max-width: 90%;min-width: 850px;margin: 0 auto}
-		.col-5{width: 40%;padding: 10px;display: block;float: left;}
-		.fl{float: left;border: 1px solid #9c8787}
+		.col-4{width: 40%;padding: 10px;display: block;float: left;}
+		.fl,.fr{border: 1px solid #9c8787}
+		.fl{float: left;}
 		.fr{float: right;}
 		.header{padding: 30px;margin-bottom: 10px;}
-		.css .item{padding: 15px 10px;border-bottom: 1px solid #9c8787;}
-		.css .item a{color: #000}
-		.css .item a:hover{color: #b19797}
-		.css .item span{float: right;color: red;font-size: 14px;}
+		/*.css */.item{padding: 15px 10px;border-bottom: 1px solid #9c8787;}
+		/*.css */.item a{color: #000}
+		/*.css */.item a:hover{color: #b19797}
+		/*.css */.item span{float: right;color: red;font-size: 14px;}
 
 	</style>
 </head>
@@ -28,12 +29,12 @@
 	</div>
 	<div class="main">
 		<div class="container">
-			<div class="fl col-5 css">
+			<div class="fl col-4 css">
 				<center><h3>Css-tasks</h3></center>
 				<div class="item"><a href="css/task1/index.html">task1-九宫格</a><span>√&nbsp;&nbsp;&nbsp;&nbsp;已完成</span></div>
 				<div class="item"><a href="css/task2/index.html">task2-开发工具</a><span>※&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
 				<div class="item"><a href="css/task3/index.html">task3-魔镜</a><span>√&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
-				<div class="item"><a href="css/task4/index.html">task4-登陆页面</a><span>&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
+				<div class="item"><a href="css/task4/index.html">task4-登陆页面</a><span>√&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
 				<div class="item"><a href="css/task5/index.html">task5-</a><span>&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
 				<div class="item"><a href="css/task6/index.html">task6-</a><span>&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
 				<div class="item"><a href="css/task7/index.html">task7-</a><span>&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
@@ -46,7 +47,12 @@
 				<div class="item"><a href="css/task14/index.html">task14-</a><span>&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
 				<div class="item"><a href="css/task15/index.html">task15-</a><span>&nbsp;&nbsp;&nbsp;&nbsp;未完成</span></div>
 			</div>
-			<div class="fr col-5"></div>
+			<div class="fr col-4">
+				<center><h3>ReCss-tasks</h3></center>
+				<div class="item"><a href="recss/task1/index.html">task1-九宫格</a><span>改版，不同方法之inline-block</span></div>
+				<div class="item"><a href="recss/task3/index.html">task3-魔镜</a><span>改版，尺寸之rem+%+media</span></div>
+				<div class="item"><a href="recss/task4/index.html">task4-登陆页面</a><span>改版，尺寸之rem+%+media</span></div>
+			</div>
 		</div>
 	</div>
 </body>

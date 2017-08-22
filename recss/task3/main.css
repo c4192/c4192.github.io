@@ -1,0 +1,70 @@
+body,html {
+	width: 100%;
+	font-size: 625%;
+	font-weight: 600;
+	padding: 0;
+	margin: 0;
+	background: #68cdd5
+
+}
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 70px;
+        background: #ccc
+    }
+    .main .wrap .content {
+    	font-size: 16px
+    }
+}
+.container {
+	margin: 0 auto;
+	padding: 3.1% 5.47%;
+}
+.header {
+	margin-bottom: 3.1%;
+}
+.header .wrap img {
+	display: block;
+	width: 0.566rem;
+	max-width: 0.566rem;
+}
+.main .wrap {
+	padding: 0 8.75%;
+	color: #fff
+}
+.main .wrap img {
+	display: block;
+	width: 2.275rem;
+	max-width: 2.28rem;
+	margin: 3.44% auto;
+}
+.main .wrap .content {
+	font-size: .2416rem;
+	padding: 15.47% 0
+}
+.footer .wrap {
+	font-size: .2416rem;
+	padding: 12.34% 8.75%;
+	color: #fff;
+}
+.footer .cum .item{
+	width: 1.2083rem;
+	text-align: center;
+}
+.footer .cum img {
+	width: 70%;
+	max-width: 100%;
+}
+.footer .cum .fl {
+	float: left;
+}
+.footer .cum .fr {
+	float: right;
+}
+.cum:after,
+.cum:before {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: display
+}

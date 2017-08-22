@@ -1,0 +1,116 @@
+html,body,div,input,button {padding: 0;margin: 0}
+html,body {width: 100%;font-size: 625%}
+body {color: #fff;background: #ccc}
+@media screen and (max-width: 950px) {
+    html {
+        font-size: 60px;
+        background: #ccc
+    }
+}
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 45px;
+        background: #ccc
+    }
+}
+a {text-decoration: none;color: #fff}
+.col-3,
+.col-4 {
+	display: block;
+	float: left;
+}
+.col-3 {
+	width: 30%;
+}
+.col-4 {
+	padding: 4.03% 0;
+	text-align: center;
+	font-size: .2875rem;
+	/*line-height: 2.125vw;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0
+}
+.fr {
+	text-align: right;
+	float: right;
+}
+.header:before,
+.header:after {
+	content: " ";
+	display: block;
+	visibility: display;
+	clear: both;
+}
+.header {
+	position: fixed;
+/*	position: relative;
+*/	top: 0;
+	left: 0;
+	right: 0;
+	padding: 4.03% 4.3%;
+	font-size: .2575rem;
+}
+.main {
+	/*margin-top: 14rem;*/
+	margin-top: 12.7%;
+	font-size: .2575rem;
+	background: #ccc
+}
+.container {
+	padding: 4.2% 0;
+	background: #fff;
+	margin-top: 2%
+}
+.container i {
+	padding: 0 6%;
+	vertical-align: top;
+	/*max-height: 1.875rem;*/
+	/*width: 1.875vw;*/
+	/*max-width: 100%;*/
+}
+.phone {
+	background: url(../../css/task4/img/phone.png) no-repeat;
+	background-size: contain;
+	background-position: 50%
+}
+.password {
+	background: url(../../css/task4/img/lock.png) no-repeat;
+	background-size: contain;
+	background-position: 50%
+}
+.container input {
+	padding: 0 4.8%;
+	border: 0;
+	border-left: 0.02rem solid #eaedee;
+	outline: 0;
+	font-size: .2575rem;
+}
+.footer {
+	margin-top: 7%
+}
+.header,
+button {
+	background: #5fc0cd
+}
+button {
+	color: #fff;
+	font-size: .2875rem;
+	letter-spacing: .2rem;
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	padding: 4.03% 0;
+	border: 0;
+	outline: 0;
+	/*background: #eaedee*/
+}
+button:hover {
+	cursor: pointer;
+}
+.footer a {
+	float: right;
+	font-size: .2275rem;
+	margin: .15rem .33rem 0 0
+}
