@@ -10,7 +10,7 @@
 		i {display: inline-block;float:left;padding: 30% 30% 0 0;background: #ffa500;border-radius: 10px;margin:0 3% 3% 0;}
 	</style>
 </head>
-<body>
+<body onload="load()">
 	<div class="wrap">
 		<i></i>
 		<i></i>
@@ -24,3 +24,18 @@
 	</div>
 </body>
 </html>
+<script>
+function load(){
+	function color(){
+		for(var j = 0;j < 9;j++){
+			var a = '#';
+			var num = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+			for(var i = 0;i < 6;i++){
+				a += num[Math.ceil(Math.random()*10)]
+			}
+			document.getElementsByTagName('i')[j].style.background = a
+		}
+	}
+	setInterval(color,1000)
+}
+</script>
