@@ -1,3 +1,4 @@
+/*.header,.container,.footer进行了flex布局重构*/
 html,body,div,input,button {padding: 0;margin: 0}
 html,body {width: 100%;font-size: 625%}
 body {color: #fff;background: #ccc}
@@ -14,43 +15,20 @@ body {color: #fff;background: #ccc}
     }
 }
 a {text-decoration: none;color: #fff}
-.col-3,
-.col-4 {
-	display: block;
-	float: left;
-}
-.col-3 {
-	width: 30%;
-}
-.col-4 {
-	padding: 4.03% 0;
-	text-align: center;
-	font-size: .2875rem;
-	/*line-height: 2.125vw;*/
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0
-}
-.fr {
-	text-align: right;
-	float: right;
-}
-.header:before,
-.header:after {
-	content: " ";
-	display: block;
-	visibility: display;
-	clear: both;
-}
+
 .header {
 	position: fixed;
-/*	position: relative;
-*/	top: 0;
+	top: 0;
 	left: 0;
 	right: 0;
 	padding: 4.03% 4.3%;
 	font-size: .2575rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header .title{
+	font-size: .2875rem;
 }
 .main {
 	/*margin-top: 14rem;*/
@@ -61,24 +39,14 @@ a {text-decoration: none;color: #fff}
 .container {
 	padding: 4.2% 0;
 	background: #fff;
-	margin-top: 2%
+	margin-top: 2%;
+	display: flex;
+	align-items: center;
 }
-.container i {
-	padding: 0 6%;
+.container img {
+	margin: 0 6%;
 	vertical-align: top;
-	/*max-height: 1.875rem;*/
-	/*width: 1.875vw;*/
-	/*max-width: 100%;*/
-}
-.phone {
-	background: url(../../css/task4/img/phone.png) no-repeat;
-	background-size: contain;
-	background-position: 50%
-}
-.password {
-	background: url(../../css/task4/img/lock.png) no-repeat;
-	background-size: contain;
-	background-position: 50%
+	width: 3.5%;
 }
 .container input {
 	padding: 0 4.8%;
@@ -88,29 +56,29 @@ a {text-decoration: none;color: #fff}
 	font-size: .2575rem;
 }
 .footer {
-	margin-top: 7%
+	margin-top: 7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .header,
 button {
 	background: #5fc0cd
 }
 button {
+	flex: 1;
 	color: #fff;
 	font-size: .2875rem;
 	letter-spacing: .2rem;
-	width: 100%;
-	max-width: 100%;
-	display: block;
 	padding: 4.03% 0;
 	border: 0;
 	outline: 0;
-	/*background: #eaedee*/
 }
 button:hover {
 	cursor: pointer;
 }
 .footer a {
-	float: right;
+	align-self: flex-end;
 	font-size: .2275rem;
-	margin: .15rem .33rem 0 0
+	margin: .15rem .15rem .15rem 0
 }

@@ -1,3 +1,4 @@
+/*增添了flex局部布局*/
 body,html {
 	width: 100%;
 	font-size: 625%;
@@ -47,6 +48,10 @@ body,html {
 	padding: 12.34% 8.75%;
 	color: #fff;
 }
+.footer .cum {
+	display: flex;
+	justify-content: space-between;
+}
 .footer .cum .item{
 	width: 1.2083rem;
 	text-align: center;
@@ -54,17 +59,4 @@ body,html {
 .footer .cum img {
 	width: 70%;
 	max-width: 100%;
-}
-.footer .cum .fl {
-	float: left;
-}
-.footer .cum .fr {
-	float: right;
-}
-.cum:after,
-.cum:before {
-	content: " ";
-	display: block;
-	clear: both;
-	visibility: display
 }
