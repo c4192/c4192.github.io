@@ -1,0 +1,117 @@
+* {box-sizing: border-box;} 	/*设置盒子模型默认宽度*/
+
+html,body,div,a {margin: 0;padding: 0;} 	/*初始化margin，padding*/
+
+html,body {width: 100%;font-size: 62.5%;} 	/*设置默认字体大小*/
+/*共同样式*/
+body,button {font-size: 3vw;}
+.header, .ban, .ban .info, .main .skill .item, .skill .item span, .footer {display: flex;}
+img {width: 2vw;}
+.header,.footer {justify-content: space-between;}
+.header,.skill .item span {align-items: center;}
+.header,.ban,.footer button.p {color: #fff;}
+.header,.footer button.p {background: #5fc0cd}
+.main,.main .skill,.footer {padding: 0 4.16%;}
+.ban,.main .skill .item {justify-content: flex-start; }
+/*共同样式*/
+
+.header {
+	padding: 4% 4.861%;
+}
+
+.ban {
+    position: relative;
+    padding: 10% 5%;
+}
+
+.ban:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(img/doc.png) no-repeat;
+    background-size: 100%;
+    filter: blur(3px) brightness(.9);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.ban .av {
+    width: 20%;
+    padding-top: 20%;
+    border-radius: 50%;
+    background: url(img/avatar.png) no-repeat #efefef;
+    background-size: 60%;
+    background-position: 50% 100%;
+}
+
+.ban .info {
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.main {
+    padding: 0 4.16%;
+    margin-bottom: 16%;
+}
+
+.main .title {
+    margin: 3vw 0;
+}
+
+.main .title:before {
+    content: " ";
+    display: inline-block;
+    width: 2px;
+    height: 2vw;
+    background: #e1e5e7;
+    vertical-align: baseline;
+    margin-right: 4.16%;
+}
+
+.main .skill .item {
+    padding: 4.861% 0;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.skill .item span {
+    margin-right: 2.7vw;
+}
+
+.skill .content span:nth-of-type(1) {
+    white-space: nowrap;
+    color: #999;
+}
+
+.skill .item span:nth-of-type(2) {
+    padding-left: 2.7vw;
+    border-left: 2px solid #e1e5e7;
+}
+
+.item img {
+    width: 3vw;
+    margin-right: 1.5vw
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer button {
+    padding: 2% 0;
+    flex: .45;
+    border: 2px solid #5fc0cd;
+    outline: 0;
+    border-radius: 1vw
+}
+
+.footer button.m {
+    background: #fff;
+    color: #5fc0cd
+}
