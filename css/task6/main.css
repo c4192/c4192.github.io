@@ -1,0 +1,133 @@
+.header,
+.footer .home,
+.footer .per,
+.main .op .item,
+.main .content .item,
+.footer {display: flex;}
+.header,
+.footer {justify-content: space-between;}
+.header,
+.main .op .item,
+.main .content .item,
+.footer,
+.footer .home,
+.footer .per{align-items: center;}
+.header .chs,
+.header label {background-color: #55a8b3;}
+body {font-size: 1.4vw;}
+.header{
+	padding: 1% 5%;
+	background-color: #5fc0cd
+}
+.header .chs {
+	border-radius: 15px;
+}
+.header label {
+	font-size: 2.2vw;
+	border-radius: 1.5vw;
+	color: #fff;
+	margin: 0;
+	padding: 2.2vw 2.2vw;
+}
+.header .chs input {display: none;}
+.header .chs input:checked + label {
+	background-color: #fff;
+	color: #5fc0cd;
+}
+.header i {
+	height: 5.2vw;
+	width: 5.2vw;
+	background-image: url(img/local.png);
+	background-size: cover;
+}
+.main div{
+	margin: 0;
+	padding: 0
+}
+.main .op,
+.main .content .item {
+	padding: 2% 5%;
+	border-bottom: 1px solid #ccc
+}
+.main .op .op-bor {
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	background-clip: padding-box,border-box;
+	background-origin:padding-box,border-box;
+	background-image:linear-gradient(#fff,#fff),linear-gradient(#fffcfc, #ccc, #fff);
+}
+.main .op .item {
+	justify-content: flex-end;
+}
+.main .op .item .select {
+	flex: 1;
+	text-align: center;
+}
+.main .op .item span {
+	margin: 0 20px
+}
+.main .content .item .it1 {
+	flex-direction: column;
+	align-items: flex-start;
+}
+.main .content .item .it1 .info {
+	padding-left: 10%;
+	margin-bottom: 1%;
+	color: #999
+}
+.main .content .item .it1 .adt {
+	background-image: url(img/cale.png);
+}
+.main .content .item .it1 .adg {
+	color: #000
+}
+.main .content .item .it1 .adr {
+	background-image: url(img/to.png);
+}
+.main .content .item .it1 .adt,
+.main .content .item .it1 .adr {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 center
+}
+.it2 {
+	text-align: right;
+	background-image: url(img/right.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% center
+}
+.it2 span {
+	padding-right: 10%;
+}
+.footer {
+	padding: 1% 25%;
+	background: #f8fafb
+}
+.footer .wr {
+	width: 8vw;
+	height: 8vw;
+	border-radius: 50%;
+	background: url(img/wr.png) #5fc0cd;
+}
+.footer .home,
+.footer .per {
+	flex-direction: column;
+}
+.footer .home i {
+	background-image: url(img/home.png);
+}
+.footer .per i {
+	background-image: url(img/per.png);
+}
+.footer .item i {
+	width: 6vw;
+	height: 6vw;
+}
+.header i,
+.footer .item i,
+.footer .wr {
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+}
