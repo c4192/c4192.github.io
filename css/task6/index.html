@@ -1,95 +1,74 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+	<title>护工列表页</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<div class="container">
-		<div class="header">
-			<a href="#"></a>
-			<div class="chs">
-				<input type="radio" name="n" id="l" ><label for="l">找雇主</label><input type="radio" name="n" id="r" checked><label for="r">找护工</label>
-			</div>
-			<i></i>
+<div class="container">
+	<div class="header">
+		<div class="btn">
+			<input type="radio" name="btn" id="l"><label for="l">找雇主</label><input type="radio" name="btn" id="r" checked><label for="r">找护工</label>
 		</div>
-		<div class="main">
-			<div class="op clearfix">
-				<div class="col-sm-4 item">
-					<div class="select">所在地</div>
-					<span class="caret"></span>
-				</div>
-				<div class="col-sm-4 item op-bor">
-					<div class="select">食宿</div>
-					<span class="caret"></span>
-				</div>
-				<div class="col-sm-4 item">
-					<div class="select">病人情况</div>
-					<span class="caret"></span>
-				</div>
-			</div>
-			<div class="content">
-				<div class="item clearfix">
-					<div class="col-md-6 it it1">
-						<div class="info adt">服务日期</div>
-						<div class="info adg">2015-7-5 至 2015-7-12</div>
-						<div class="info adr">北京.通州.果园</div>
-					</div>
-					<div class="col-md-6 it it2"><span>25元/小时</span></div>
-				</div>
-				<div class="item clearfix">
-					<div class="col-md-6 it it1">
-						<div class="info adt">服务日期</div>
-						<div class="info adg">2015-7-5 至 2015-7-12</div>
-						<div class="info adr">北京.通州.果园</div>
-					</div>
-					<div class="col-md-6 it it2"><span>25元/小时</span></div>
-				</div>
-				<div class="item clearfix">
-					<div class="col-md-6 it it1">
-						<div class="info adt">服务日期</div>
-						<div class="info adg">2015-7-5 至 2015-7-12</div>
-						<div class="info adr">北京.通州.果园</div>
-					</div>
-					<div class="col-md-6 it it2"><span>25元/小时</span></div>
-				</div>
-				<div class="item clearfix">
-					<div class="col-md-6 it it1">
-						<div class="info adt">服务日期</div>
-						<div class="info adg">2015-7-5 至 2015-7-12</div>
-						<div class="info adr">北京.通州.果园</div>
-					</div>
-					<div class="col-md-6 it it2"><span>25元/小时</span></div>
-				</div>
-				<div class="item clearfix">
-					<div class="col-md-6 it it1">
-						<div class="info adt">服务日期</div>
-						<div class="info adg">2015-7-5 至 2015-7-12</div>
-						<div class="info adr">北京.通州.果园</div>
-					</div>
-					<div class="col-md-6 it it2"><span>25元/小时</span></div>
-				</div>
-				<div class="item clearfix">
-					<div class="col-md-6 it it1">
-						<div class="info adt">服务日期</div>
-						<div class="info adg">2015-7-5 至 2015-7-12</div>
-						<div class="info adr">北京.通州.果园</div>
-					</div>
-					<div class="col-md-6 it it2"><span>25元/小时</span></div>
-				</div>
-			</div>
+		<i></i>
+	</div>
+	<div class="main">
+		<ul class="dropdown">
+			<li><span>所在地</span><i></i></li>
+			<li class="mid"><span>食宿</span><i></i></li>
+			<li><span>病人情况</span><i></i></li>
+		</ul>
+		<ul class="content">
+			<li class="item">
+				<ul class="info">
+					<li class="info-dt">服务日期</li>
+					<li class="info-dd">2015-7-5 至 2015-7-12<span>25元/小时<img src="img/right.png"></span></li>
+					<li class="info-adr">北京.通州.果园</li>
+				</ul>
+			</li>
+			<li class="item">
+				<ul class="info">
+					<li class="info-dt">服务日期</li>
+					<li class="info-dd">2015-7-5 至 2015-7-12<span>25元/小时<img src="img/right.png"></span></li>
+					<li class="info-adr">北京.通州.果园</li>
+				</ul>
+			</li>
+			<li class="item">
+				<ul class="info">
+					<li class="info-dt">服务日期</li>
+					<li class="info-dd">2015-7-5 至 2015-7-12<span>25元/小时<img src="img/right.png"></span></li>
+					<li class="info-adr">北京.通州.果园</li>
+				</ul>
+			</li>
+			<li class="item">
+				<ul class="info">
+					<li class="info-dt">服务日期</li>
+					<li class="info-dd">2015-7-5 至 2015-7-12<span>25元/小时<img src="img/right.png"></span></li>
+					<li class="info-adr">北京.通州.果园</li>
+				</ul>
+			</li>
+			<li class="item">
+				<ul class="info">
+					<li class="info-dt">服务日期</li>
+					<li class="info-dd">2015-7-5 至 2015-7-12<span>25元/小时<img src="img/right.png"></span></li>
+					<li class="info-adr">北京.通州.果园</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="footer">
+		<div class="item home">
+			<img src="img/home.png">
+			<p>首页</p>
 		</div>
-		<div class="footer">
-			<div class="item home">
-				<i></i><span>首页</span>
-			</div>
-			<div class="item wr"></div>
-			<div class="item per">
-				<i></i><span>我的</span>
-			</div>
+		<div class="item wr">
+		</div>
+		<div class="item per">
+			<img src="img/per.png">
+			<p>我的</p>
 		</div>
 	</div>
+</div>
 </body>
 </html>
