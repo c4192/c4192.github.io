@@ -1,124 +1,220 @@
-* {box-sizing: border-box;}
-html,body,div,ul,li,img,i,span,p,label {padding: 0;margin: 0}
-ul,li { list-style: none; }
-a {text-decoration: none;}
-.header,
-.main .dropdown li,
-.footer .item {text-align: center;}
+/*全部使用rem+%，fixed元素使用了固定高度*/
+* {
+  box-sizing: border-box;
+}
 
-.header .btn,
-.header .btn label,
-.header i,
-.main .dropdown li i {display: inline-block;}
+html,body,div,ul,li,i,input,img,label,a {
+  margin: 0;
+  padding: 0;
+}
 
-.header .btn input:checked + label,
-.footer .home {color: #5fc0cd}
+html {
+  font-size: 14px
+}
 
-.main .dropdown,
-.footer {display: flex;}
+ul {
+  list-style-type: none
+}
+
+body {
+  padding-top: 5rem;
+  padding-bottom: 6rem
+}
+
+.header,.main .dropdown ul,.main .dropdown li,.footer {
+  display: flex;
+}
+
+.header,.main .dropdown li,footer {
+  align-items: center;
+}
+
+.header,.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 111
+}
+
+.header,.main .content ul {
+  padding: 0 3%;
+}
+
+.header,.footer .wr {
+  height: 5rem;
+  background-color: #5fc0cd
+}
+
+.header .btn-group,.header .btn-group label {
+  border-radius: 15px;
+}
+
+.header .btn-group label,i {
+  display: inline-block;
+}
+
+i:not(.non),.footer .wr {
+  background-image: url(img/cp.png);
+  background-repeat: no-repeat;
+}
+
+.main .dropdown ul,.main .content ul {
+  border-bottom: 1px solid #999
+}
 
 .header {
-	position: relative;
-	padding: 2% 5%;
-	background-color: #5fc0cd;
+  justify-content: center;
+  top: 0;
 }
-.header .btn,
-.header .btn label {border-radius: 15px}
-.header .btn,
-.header .btn label {
-	background-color: #55a8b3;
+
+.header .btn-group {
+  background-color: #55a8b3;
+  font-size: 1.4rem
 }
-.header .btn input {display: none;}
-.header .btn label {
-	padding: 15px 15px;
-	color: #fff;
+
+.header .btn-group input {
+  display: none;
 }
-.header .btn input:checked + label {
-	background-color: #fff;
+
+.header .btn-group label {
+  padding: 1rem 1.3rem;
+  color: #fff
 }
+
+.header .btn-group label.r {
+  margin-left: -10px;
+}
+
+.header .btn-group input:checked + label {
+  background-color: #fff;
+  color: #5fc0cd;
+}
+
 .header i {
+  position: absolute;
+  right: 3%;
+  width: 42px;
+  height: 44px;
+  background-position: -10px -360px;
+  transform: scale(0.6,0.6);
+}
+
+.main .dropdown ul {
+  padding: 1rem 3%;
+}
+
+.main .dropdown .ha {
+	display: none;
 	position: absolute;
-	width: 3.5vw;
-	height: 3.5vw;
-	background: url(img/local.png);
-	background-size: contain;
-	top:50%;
-	right: 3%;
-	transform:translate(-50%,-50%);
-}
-.main {
-	margin-bottom: 10vw;
-}
-.main .dropdown {
-	border-bottom: 1px solid #e1e5e7;
-	padding: 0 5%
-}
-.main .dropdown li{
-	flex: 1;
-	padding: 15px 0;
-}
-.main .dropdown li.mid {
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	background-clip: padding-box,border-box;
-	background-origin: padding-box,border-box;
-	background-image: linear-gradient(#fff, #fff),linear-gradient(#fffcfc, #ccc, #fff)
-}
-.main .dropdown li i {
-	float: right;
-	margin-top: 7px;
-	margin-right: 5%;
-  border-top: 8px solid #afbac0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent
-}
-.main .content ul {
-	padding: 0 5%;
-	border-bottom: 1px solid #e1e5e7
-}
-.main .content ul li {
-	padding:1% 0 1% 7%;
-}
-.main .content ul span {
-	color: #e63b0e;
-	float: right;
-	margin-right: 2%;
-}
-.main .content ul span img {
-	margin-left: 1.5vw;
-	vertical-align: -50%
-}
-.main .content ul .info-dt {
-	background: url(img/cale.png) no-repeat;
-	background-position: 0 center
-}
-.main .content ul .info-adr {
-	background: url(img/to.png) no-repeat;
-	background-position: 0 center
-}
-.main .content ul .info-dt,
-.main .content ul .info-adr,
-.footer .per {
-	color: #999
-}
-.footer {
-	position: fixed;
-	bottom: 0;
+	top: 100%;
 	left: 0;
 	right: 0;
-	justify-content: space-between;
-	align-items: center;
-	padding:1% 30%;
-	background-color: #f8fafb;
-	border-top: 1px solid #e2eaec
+	border: 1px solid #ccc;
+	background: #ccc;
+	font-weight: bold;
+	color: #fff;
+	z-index: 222;
+}
+.main .dropdown .ha p {border-bottom: 1px solid #a20}
+
+
+.main .dropdown li {
+	position: relative;
+  justify-content: flex-end;
+}
+.main .dropdown li:hover .ha{display: block;}
+.main .dropdown li.mid {
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  background-clip: padding-box,border-box;
+  background-origin: padding-box,border-box;
+  background-image: linear-gradient(#fff, #fff),linear-gradient(#fffcfc, #ccc, #fff)
+}
+
+.main .dropdown li span,.footer {
+  text-align: center;
+}
+
+.main .dropdown li,.main .dropdown li span {
+  flex: 1
+}
+
+.main .dropdown li i {
+  margin-right: 1rem;
+  border-top: .6rem solid #000;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+}
+
+.main .content .item:hover {
+  background: #eee
+}
+
+.main .content li {
+  padding: 10px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.main .content li i {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem
+}
+
+.main .content li.cale i {
+  background-position: -10px -81px;
+}
+
+.main .content li.adr i {
+  background-position: -10px -38px;
+}
+
+.main .content li.cale, .main .content li.adr {
+  color: #999
+}
+
+.main .content li span {
+  font-weight: bold;
+  color: #e63;
+  float: right;
+}
+
+.main .content li span i {
+  margin-left: 1rem;
+  width: 24px;
+  height: 33px;
+  background-position: -10px -125px;
+  transform: scale(0.8)
+}
+
+.main .content li i,.main .content li span i {
+  vertical-align: middle;
+}
+
+.footer {
+  justify-content: space-around;
+  bottom: 0;
+  height: 6rem;
+  background-color: #f8fafb;
+  border-top: 1px solid #e2eaec;
+}
+
+.footer .home i {
+  width: 46px;
+  height: 40px;
+  background-position: -10px -178px;
 }
 
 .footer .wr {
-	width: 7vw;
-	height: 7vw;
-	background:url(img/wr.png) #5fc0cd;
-	background-position: center;
-	border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-position: 6px -286px;
 }
-.header i,
-.footer .wr{background-repeat: no-repeat;}
+
+.footer .per i {
+  width: 46px;
+  height: 40px;
+  background-position: -10px -238px;
+}
