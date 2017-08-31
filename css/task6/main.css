@@ -124,6 +124,10 @@ i:not(.non) {
 }
 .main .dropdown li select {width: 100%;border:0;outline: 0;
 padding-left:45%;font-size: 1.5rem;}
+@media screen and (max-width: 500px){
+  html {font-size: 12px;}
+ .main .dropdown li select {padding-left: 0}
+}
 /*.main .dropdown li select option {border:0;}*/
 .main .dropdown li:hover .ha{display: block;}
 .main .dropdown li.mid {
