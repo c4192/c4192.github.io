@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>投票</title>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/vote.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="header">
+				<img src="img/vetc.png">
+				<h4>投票</h4>
+				<img src="img/cls.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="main">
+				<div class="bar">
+					<span>发言讨论结束，大家请投票</span>
+					<div class="audio" >
+						<div class="bg" id="begin" onclick="begin()"></div>
+						<div class="st" id="stop" onclick="pause()"></div>
+					</div>
+					<audio id="mp3" src="img/audio.mp3"></audio>
+					<script>
+						function begin(){
+							document.getElementById('begin').style.display = 'none';
+							document.getElementById('stop').style.display = 'block';
+							document.getElementById('mp3').play();
+						}
+						function pause(){
+							document.getElementById('stop').style.display = 'none';
+							document.getElementById('begin').style.display = 'block';
+							document.getElementById('mp3').pause();
+						}
+					</script>
+				</div>
+				<div class="member">
+					<div class="title">点击得票数最多人的头像</div>
+					<div class="item-list">
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="item-top">
+								<div class="id">水民</div>
+								<div class="id-num">i=1;i&lt;item.length;i++</div>
+							</div>
+							<ul class="action">
+								<li class="info kill"></li>
+								<li class="info seer"></li>
+								<li class="info shoot"></li>
+								<li class="info potion"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="footer">
+				<button>投死</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
