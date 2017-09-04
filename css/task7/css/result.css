@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+html {font-size: 16px}
+body { max-width: 640px;margin: 0 auto;padding-bottom: 7rem;}
+ul {list-style-type: none;padding: 0;margin: 0}
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 10px
+    }
+}
+.container {width: 100%;background-color: #29bde0}
+
+.header {display: flex;justify-content: space-between;align-items: center;color: #fff}
+.header img {transform: scale(.6);}
+
+.main .result { text-align: center;padding: 0 10%;}
+.main .result img { /*display: inline-block;*/ /*transform: scale(.6)*/;width: 50%;text-align: center; }
+.main .result p.msg { color: #ffc865;font-weight: bold;font-size: 2rem;text-align: justify;}
+.main .result .summary{ text-align:left;color: #fff;font-size: 1rem;margin: 5% 0}
+.main .result .summary .member span { display: inline-block;float: left;width: 33% ;}
+.main .result .summary p {padding:0;margin: 0}
+.main .pday .item {padding: 0 15% 0 10%;background-color: #fff; border-bottom: 2px solid #ddd;}
+.main .pday .item .title {display: flex;justify-content: space-between;align-items: center;margin-bottom: 1rem}
+.main .pday .item .title span.day{font-size: 2rem}
+.main .pday .item .title span.time{float: right;color: #c7c7c7}
+.main .pday .item .details {color: #a6a6a6;font-size: 1rem;padding-bottom: 1rem;}
+
+.footer {position: fixed;bottom: 0;width: 100%;max-width: 640px;background: rgba(153,223,240,.8);padding: 2% 0;text-align: center;}
+.footer a {display: inline-block;color: #fff;background-color: #f66f6f;width: 45%;padding: 3% 0;border-radius: 1rem;text-decoration: none;}
+.footer a:last-child {background-color: #fbb435}
