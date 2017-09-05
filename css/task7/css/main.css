@@ -1,19 +1,24 @@
 * {box-sizing: border-box;}
 body { max-width: 640px;margin: 0 auto; }
+@media screen and (max-width: 450px) {
+    html {font-size: 12px}
+    h3,.title {font-size: 1.5rem}
+    .game-list,.info {font-size: 14px}
+}
 .container {width: 100%;/*background: #ccc*/}
 h3 {margin: 10px 0}
-.header {background-color: #29bde0;padding: 1rem 0;}
+.header {background-color: #29bde0;padding: 1rem 0;padding-left: 1rem}
 .header img {transform: scale(0.7);}
 
 .main { background-color: #f0f0f0;font-size: 2.5rem; }
 .main .last-game {position: relative;padding: 1rem;color: #9a9a9a}
-.main .last-game img { position: absolute; right: 3%;top: 50%;transform: translateY(-50%) scale(0.8);
+.main .last-game img { position: absolute; right: 3%;top: 50%;transform: translateY(-50%) scale(0.6);
  }
 .main .last-game,
 .main .game-list {padding-left: 0;padding-right: 0;margin-top: 1.5rem;margin-bottom: 1.5rem;background-color: #fff;text-align: center;}
 .main .game-list .title {padding: 1.5rem 0;margin-bottom: 2rem;border-bottom: 1px solid #fdd793;color: #fdd793}
 .main .game-list {position: relative;}
-.main .game-list img {position:absolute;right: 2%;top: 50%;transform: translateY(-50%;)}
+.main .game-list img {position:absolute;right: 2%;top: 50%;transform: scale(.7) translateY(-50%;);transform: scale(.7);}
 .main .game-list .item .pro {
 	background-color: #69d1e9;
 	color: #fff;
@@ -22,7 +27,7 @@ h3 {margin: 10px 0}
 .main .game-list .item .info {
 	padding: 1.5rem 0;
 	color: #787878;
-	font-size: 1.5rem
+	/*font-size: 1.5rem*/
 }
 .main .game-list .item ul {
 	list-style-type: none;
