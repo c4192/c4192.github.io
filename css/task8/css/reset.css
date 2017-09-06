@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+html,body,header,footer,h1,h2,h3,h4,h5,div,img,audio,video,ul,ol,li,p,span {padding: 0;margin: 0;}
+html,body {font-size: 14px;}
+a {text-decoration: none;color: #000}
+.clearfl:after,.clearfl:before {content: " ";display: block;height: 0;line-height: 0;visibility: hidden;clear: both;}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9 {display: block;position: relative;min-height: 1px;float: left;}
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.fl{display: inline-block;float: left;}
+.fr{display: inline-block;float: right;}
