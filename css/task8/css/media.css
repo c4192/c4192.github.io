@@ -1,0 +1,25 @@
+@media screen and (max-width: 850px) {
+	html { font-size: 13px }
+	.header-nav a {width: 100%;text-align: center;}
+	.commu,
+	.learn-path .item-list .item-row .item,
+	.learn-path .item-list .item-row,
+	.stu-show .item-list,
+	.cp .item-list,
+	.footer .content{flex-direction: column;}
+	.commu .commu-item { margin-bottom: 7rem}
+	.commu span.content,.learn-path span.desc {padding: 0 3rem}
+	.commu .commu4 { display: none; }
+	.learn-path .item-list .item-row .item {flex-direction: column;}
+	.learn-path .item-list .item-row .item > * { margin-bottom: 2rem;margin-right: 0}
+	.learn-path .item-list .item-row .item > img { transform: rotate(90deg);}
+	.friend-link .item-row:first-child { display: none; }
+	.friend-link .item-row { flex-wrap: wrap;}
+	.friend-link .item-row .item {flex: 0 0 33%;text-align: center;}
+	.footer .content .item {margin-right: 0;margin-bottom: 2rem;height: auto;}
+	.footer .content .qrcude {align-items: flex-start;}
+}
+@media screen and (max-width: 650px) {
+	span {background-clip: #ccc}
+	.website .span { display: inline-block; width: 100%;}
+}

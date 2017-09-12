@@ -12,11 +12,12 @@ a:hover { text-decoration: none; }
 	color: #29b078;
 	width: 80%;
 	margin: 0 auto;
+	font-size: .9rem
 }
 .header .header-top a {
 	display: inline-block;
-	width: 2rem;
-	height: 2rem;
+	width: 1.8rem;
+	height: 1.8rem;
 	margin-left: 5px;
 	transform: scale(.9);
 }
@@ -206,7 +207,7 @@ h5 { text-align: center;font-weight: 600;margin-bottom: 2rem}
 	margin-right: .5rem
 }
 .friend-link .item:hover {
-	box-shadow: 0 0px 1px #26a26f
+	text-decoration: underline;
 }
 .footer {
 	background-color: #26a26f;
@@ -223,6 +224,9 @@ h5 { text-align: center;font-weight: 600;margin-bottom: 2rem}
 	flex-direction: column;
 	justify-content: space-between;
 	height: 10rem;
+}
+.footer .content .item span:hover{
+	text-decoration: underline;
 }
 .footer .content .about {
 	margin-right: 10rem
